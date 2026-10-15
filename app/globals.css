@@ -1197,3 +1197,16 @@ a {
   font-size: 14px;
 }
 
+.page-frame {
+  padding: 8px;
+}
+
+.page-panel {
+  border-radius: 12px;
+}
+
+.footer-copy {
+  margin: 28px 0 0;
+  color: rgb(255 255 255 / 85%);
+  font-size: 11px;
+}

@@ -129,7 +129,7 @@ export default function Home() {
               >
                 Continue with email
               </a>
-
+            
               <small>
                 Free to Sign Up! By continuing, you acknowledge PowerMap&apos;s{" "}
                 <a href={LINKS.privacy}>Privacy Policy</a> and agree
@@ -256,13 +256,21 @@ export default function Home() {
               PowerMap.
             </p>
 
-            <div className="auth-card cta-card">
-              <small>
-                Free to Sign Up! By continuing, you acknowledge PowerMap&apos;s{" "}
-                <a href={LINKS.privacy}>Privacy Policy</a> and agree
-                to get occasional promotional emails and notifications.
-              </small>
-            </div>
+          <div className="auth-card cta-card">
+            <a
+              className="auth-button primary"
+              href={LINKS.explore}
+            >
+              Explore PowerMap
+            </a>
+
+            <small>
+              Free to Sign Up! By continuing, you acknowledge PowerMap&apos;s{" "}
+              <a href={LINKS.privacy}>Privacy Policy</a> and agree
+              to get occasional promotional emails and notifications.
+            </small>
+          </div>
+
           </section>
         </div>
       </div>
@@ -276,6 +284,8 @@ export default function Home() {
           <a href={LINKS.privacy}>Privacy Policy</a>
           <a href={LINKS.ambassador}>Ambassador Program</a>
         </nav>
+
+        <p>© 2026 PowerLabs. All rights reserved.</p>
       </footer>
     </main>
   );
