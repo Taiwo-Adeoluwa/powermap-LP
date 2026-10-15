@@ -14,15 +14,15 @@ const AMBASSADOR_URL = process.env.NEXT_PUBLIC_AMBASSADOR_URL;
 
 const LINKS = {
   home: "/",
-  signInGoogle: `${APP_URL}/login?provider=google&utm_source=landing`,
-  signInEmail: `${APP_URL}/signup?utm_source=landing`,
-  signIn: `${APP_URL}/login`,
-  explore: `${APP_URL}/?utm_source=landing`,
-  whatsNew: `${SUPPORT_URL}`,
-  helpCenter: `${SUPPORT_URL}`,
+  signInGoogle: `${APP_URL}/auth/login`,
+  signInEmail: `${APP_URL}/auth/login`,
+  signIn: `${APP_URL}/auth/login`,
+  explore: `${APP_URL}/dashboard`,
+  whatsNew: `${SUPPORT_URL}/whats-new`,
+  helpCenter: `${APP_URL}/support`,
   support: `${SUPPORT_URL}`,
-  privacy: `${PRIVACY_URL}`, 
-  ambassador: `${AMBASSADOR_URL}`, 
+  privacy: `${APP_URL}/privacy`,
+  ambassador: `${APP_URL}/ambassador`, 
 };
 
 const forecastFeatures = [
