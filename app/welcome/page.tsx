@@ -131,7 +131,7 @@ export default function Home() {
               </a>
 
               <small>
-                By continuing, you acknowledge PowerMap&apos;s{" "}
+                Free to Sign Up! By continuing, you acknowledge PowerMap&apos;s{" "}
                 <a href={LINKS.privacy}>Privacy Policy</a> and agree
                 to get occasional promotional emails and notifications.
               </small>
@@ -160,7 +160,7 @@ export default function Home() {
             </figure>
 
             <p className="trust-copy">
-              Trusted by users across 17 states in Nigeria
+              Trusted by users across 36 states in Nigeria
             </p>
           </section>
 
@@ -258,7 +258,7 @@ export default function Home() {
 
             <div className="auth-card cta-card">
               <small>
-                By continuing, you acknowledge PowerMap&apos;s{" "}
+                Free to Sign Up! By continuing, you acknowledge PowerMap&apos;s{" "}
                 <a href={LINKS.privacy}>Privacy Policy</a> and agree
                 to get occasional promotional emails and notifications.
               </small>
