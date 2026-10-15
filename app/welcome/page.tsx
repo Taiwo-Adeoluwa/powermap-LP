@@ -8,9 +8,10 @@ import {
 } from "lucide-react";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "";
-const SUPPORT_URL = process.env.NEXT_PUBLIC_SUPPORT_URL;
-const PRIVACY_URL = process.env.NEXT_PUBLIC_PRIVACY_URL;
-const AMBASSADOR_URL = process.env.NEXT_PUBLIC_AMBASSADOR_URL;
+const SUPPORT_URL = process.env.NEXT_PUBLIC_SUPPORT_URL ?? "";
+const PRIVACY_URL = process.env.NEXT_PUBLIC_PRIVACY_URL ?? "";
+const AMBASSADOR_URL =
+  process.env.NEXT_PUBLIC_AMBASSADOR_URL ?? "";
 
 const LINKS = {
   home: "/",
@@ -20,9 +21,9 @@ const LINKS = {
   explore: `${APP_URL}/dashboard`,
   whatsNew: `${SUPPORT_URL}/whats-new`,
   helpCenter: `${APP_URL}/support`,
-  support: `${SUPPORT_URL}`,
-  privacy: `${PRIVACY_URL}`,
-  ambassador: `${AMBASSADOR_URL}`, 
+  support: SUPPORT_URL,
+  privacy: PRIVACY_URL,
+  ambassador: AMBASSADOR_URL,
 };
 
 const forecastFeatures = [
@@ -127,7 +128,8 @@ export default function Home() {
         <h2>See How It Works</h2>
         <figure className="reference-card video-reference">
           <img
-            src="/landing-static/mockups/grid-feed.jpg"
+            src="/landing-static/mockups/grid-feed.mp4
+            "
             alt="Power grid video preview with a Power Feed tweet inside a phone"
           />
         </figure>
