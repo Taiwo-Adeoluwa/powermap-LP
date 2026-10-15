@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --blue: #1977f3;
+  --blue: #1570ef;
   --blue-dark: #0c58d8;
   --ink: #070b14;
   --copy: #1e2633;
@@ -1151,5 +1151,49 @@ a {
   margin-bottom: 20px;
 }
 
+.faq-section {
+  margin: 0 8px;
+  padding: 24px 14px;
+  background: var(--panel);
+  border-radius: 12px;
+}
 
+.faq-section h2 {
+  font-size: 20px;
+}
+
+.faq-list {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.faq-row {
+  min-height: 0;
+  padding: 14px;
+}
+
+.faq-row span {
+  max-width: none;
+  color: #0d1422;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.faq-row svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  color: var(--blue);
+}
+
+.faq-answer {
+  padding: 0 14px 14px;
+}
+
+.support-link {
+  font-size: 14px;
+}
 
