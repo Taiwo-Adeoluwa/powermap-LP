@@ -124,17 +124,31 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="how-section">
-        <h2>See How It Works</h2>
-        <figure className="reference-card video-reference">
-          <img
-            src="/landing-static/mockups/grid-feed.mp4
-            "
-            alt="Power grid video preview with a Power Feed tweet inside a phone"
-          />
-        </figure>
-        <p className="trust-copy">Trusted by users across 17 states in Nigeria</p>
-      </section>
+      
+<section className="how-section">
+  <h2>See How It Works</h2>
+
+  <figure className="reference-card video-reference">
+    <video
+      className="landing-video"
+      controls
+      playsInline
+      preload="metadata"
+      poster="/landing-static/mockups/grid-feed-poster.jpg"
+    >
+      <source
+        src="/landing-static/mockups/grid-feed.mp4"
+        type="video/mp4"
+      />
+      Your browser does not support HTML video.
+    </video>
+  </figure>
+
+  <p className="trust-copy">
+    Trusted by users across 17 states in Nigeria
+  </p>
+</section>
+
 
       {forecastFeatures.map((feature) => (
         <section className="feature-section" key={feature.title}>

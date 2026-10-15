@@ -1047,14 +1047,6 @@ a {
   border-radius: 12px;
 }
 
-.video-reference img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-
 .feature-reference {
   width: 100%;
   height: auto;
@@ -1129,6 +1121,22 @@ a {
    .feature-reference.forecast-image { background: #dcecff; }
    .feature-reference.discover-image { background: #f7f8fb; }
    
+
+.video-reference {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #000;
+}
+
+.landing-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  border-radius: inherit;
+}
 
 
 
