@@ -17,7 +17,6 @@ const LINKS = {
   home: "/",
   signInGoogle: `${APP_URL}/auth/login`,
   signInEmail: `${APP_URL}/auth/login`,
-  signIn: `${APP_URL}/auth/login`,
   explore: `${APP_URL}/dashboard`,
   whatsNew: `${SUPPORT_URL}/whats-new`,
   helpCenter: `${APP_URL}/support`,
@@ -131,10 +130,12 @@ export default function Home() {
   <figure className="reference-card video-reference">
     <video
       className="landing-video"
-      controls
+      autoPlay
+      muted
+      loop
       playsInline
-      preload="metadata"
-      poster="/landing-static/mockups/grid-feed-poster.jpg"
+      preload="auto"
+      aria-label="PowerMap demonstration video"
     >
       <source
         src="/landing-static/mockups/grid-feed.mp4"
@@ -149,20 +150,6 @@ export default function Home() {
   </p>
 </section>
 
-
-      {forecastFeatures.map((feature) => (
-        <section className="feature-section" key={feature.title}>
-          <h2>{feature.title}</h2>
-          <p>{feature.body}</p>
-          <a className="inline-link" href={feature.href}>
-            {feature.link}
-          </a>
-          <figure className={`reference-card feature-reference ${feature.imageClass}`}>
-            <img src={feature.image} alt={`${feature.title} app preview`} />
-          </figure>
-        </section>
-      ))}
-
       <section className="latest-section">
         <h2>Latest Releases</h2>
         <p>
@@ -170,9 +157,10 @@ export default function Home() {
           electricity around you. Explore the latest updates, improvements, and
           new ways to use PowerMap.
         </p>
-        <a className="inline-link" href={LINKS.whatsNew}>
+        <a className="inline-link whats-new-link" href={LINKS.whatsNew}>
           See what&apos;s new.
         </a>
+
         <figure className="reference-card release-reference">
           <img
             src="/landing-static/mockups/release-crop.jpg"
@@ -218,15 +206,12 @@ export default function Home() {
           lights are on, make your next move with PowerMap.
         </p>
         <div className="auth-card cta-card">
-          <a className="auth-button primary" href={LINKS.explore}>
-            Explore PowerMap
-          </a>
           <small>
             By continuing, you acknowledge PowerMap&apos;s{" "}
             <a href={LINKS.privacy}>Privacy Policy</a> and agree to get
-            occasional promotional emails and notifications.
+             occasional promotional emails and notifications.
           </small>
-        </div>
+    </div>
       </section>
 
       </div>
@@ -235,7 +220,6 @@ export default function Home() {
       <footer className="footer">
         <BrandLogo src="/landing-static/images/powermap-logo-footer.svg" />
         <nav aria-label="Footer navigation">
-           <a href={LINKS.signIn}>Sign In</a>
           <a href={LINKS.whatsNew}>Latest Updates</a>
           <a href={LINKS.helpCenter}>Help Center</a>
           <a href={LINKS.privacy}>Privacy Policy</a>

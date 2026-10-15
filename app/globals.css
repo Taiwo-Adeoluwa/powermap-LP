@@ -1124,18 +1124,31 @@ a {
 
 .video-reference {
   width: 100%;
+  max-width: 1080px;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  border-radius: 16px;
+  border: none;
+  border-radius: 0;
   background: #000;
+  box-shadow: none;
 }
 
 .landing-video {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 9 / 16;
+  height: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: contain;
-  border-radius: inherit;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.whats-new-link {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 
