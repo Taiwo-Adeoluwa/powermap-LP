@@ -89,10 +89,7 @@ export default function Home() {
 
   return (
     <main className="landing-page">
-      <div className="browser-bar" aria-hidden="true">
-        <span className="lock-dot" />
-        <span>powermap.tech</span>
-      </div>
+      
 
       <div className="page-frame">
       <div className="page-panel">
