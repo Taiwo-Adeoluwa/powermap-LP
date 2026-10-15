@@ -15,33 +15,38 @@ const LINKS = {
   signInGoogle: `${APP_URL}/auth/login`,
   signInEmail: `${APP_URL}/auth/login`,
   explore: `${APP_URL}/dashboard`,
-  whatsNew: `${SUPPORT_URL}/whats-new`,
+  whatsNew: `${APP_URL}/support`,
   helpCenter: `${APP_URL}/support`,
   support: `${APP_URL}/support`,
   privacy: PRIVACY_URL,
-  ambassador: AMBASSADOR_URL,
+  ambassador: `${APP_URL}/support`,
 };
+
 
 const forecastFeatures = [
   {
     title: "Power Forecast",
     body: "See an estimate of how many hours of electricity your location could have today. Plan your work day, and where you need to be.",
+    link: "Check your Power Forecast",
     image: "/landing-static/mockups/power-forecast-crop.jpg",
     imageClass: "forecast-image",
   },
   {
     title: "Discover",
     body: "Need somewhere to work, charge, relax or escape an outage? Explore cafes, workspaces and charging spots around you and check their details before you head out.",
+    link: "Check your Power Forecast",
     image: "/landing-static/mockups/discover-map-crop.jpg",
     imageClass: "discover-image",
   },
   {
     title: "Power Feed",
     body: "Find Updates. Share what's happening around you. Read recent power reports people are posting in your area and catch up on relevant news. Share what's happening where you are to help others make better plans.",
+    link: "Check your Power Forecast",
     image: "/landing-static/mockups/power-feed-crop.jpg",
     imageClass: "feed-image",
   },
 ];
+
 
 const faqs = [
   {
@@ -160,23 +165,20 @@ export default function Home() {
           </section>
 
           {forecastFeatures.map((feature) => (
-            <section
-              className="feature-section"
-              key={feature.title}
-            >
+            <section className="feature-section" key={feature.title}>
               <h2>{feature.title}</h2>
               <p>{feature.body}</p>
-
+              <p className="inline-link">{feature.link}</p>
               <figure
-                className={`reference-card feature-reference ${feature.imageClass}`}
-              >
-                <img
-                  src={feature.image}
-                  alt={`${feature.title} app preview`}
-                />
-              </figure>
-            </section>
-          ))}
+                 className={`reference-card feature-reference ${feature.imageClass}`}
+           >
+             <img
+                src={feature.image}
+                alt={`${feature.title} app preview`}
+              />
+            </figure>
+          </section>
+      ))}
 
           <section className="latest-section">
             <h2>Latest Releases</h2>
