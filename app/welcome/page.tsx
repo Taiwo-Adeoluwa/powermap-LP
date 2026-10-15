@@ -21,8 +21,8 @@ const LINKS = {
   whatsNew: `${SUPPORT_URL}/whats-new`,
   helpCenter: `${APP_URL}/support`,
   support: `${SUPPORT_URL}`,
-  privacy: `${APP_URL}/privacy`,
-  ambassador: `${APP_URL}/ambassador`, 
+  privacy: `${PRIVACY_URL}`,
+  ambassador: `${AMBASSADOR_URL}`, 
 };
 
 const forecastFeatures = [
