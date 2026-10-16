@@ -12,7 +12,7 @@ const AMBASSADOR_URL =
 
 const LINKS = {
   home: "/",
-  signInGoogle: `${APP_URL}/auth/login`,
+  signInGoogle: `${APP_URL}/auth/login?provider=google`,
   signInEmail: `${APP_URL}/auth/login`,
   explore: `${APP_URL}/dashboard`,
   whatsNew: `${APP_URL}/support`,
