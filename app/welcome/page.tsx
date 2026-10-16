@@ -276,17 +276,17 @@ export default function Home() {
       </div>
 
       <footer className="footer">
-        <BrandLogo src="/landing-static/images/powermap-logo-footer.svg" />
+  <BrandLogo src="/landing-static/images/powermap-logo-footer.svg" />
 
-        <nav aria-label="Footer navigation">
-          <a href={LINKS.whatsNew}>Latest Updates</a>
-          <a href={LINKS.helpCenter}>Help Center</a>
-          <a href={LINKS.privacy}>Privacy Policy</a>
-          <a href={LINKS.ambassador}>Ambassador Program</a>
-        </nav>
+  <nav aria-label="Footer navigation">
+    <a href={LINKS.whatsNew}>Latest Updates</a>
+    <a href={LINKS.helpCenter}>Help Center</a>
+    <a href={LINKS.privacy}>Privacy Policy</a>
+    <a href={LINKS.ambassador}>Ambassador Program</a>
+  </nav>
 
-        <p>© 2026 PowerLabs. All rights reserved.</p>
-      </footer>
+  <p className="footer-copy">© 2026 PowerLabs. All rights reserved.</p>
+</footer>
     </main>
   );
 }

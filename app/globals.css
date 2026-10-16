@@ -1210,3 +1210,89 @@ a {
   color: rgb(255 255 255 / 85%);
   font-size: 11px;
 }
+
+.footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 24px 0 32px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 400;
+}
+
+.cta-card {
+  padding: 24px 20px;
+  border-radius: 20px;
+  background: #f4f4f4;
+}
+
+.cta-card .auth-button {
+  height: 44px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.cta-card small {
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Footer */
+.footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 27px 0 36px;
+}
+
+.footer nav a {
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.footer-copy {
+  margin: 0;
+  color: rgb(255 255 255 / 90%);
+  font-size: 12.5px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* Final CTA */
+.final-cta h2 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.final-cta p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.cta-card {
+  padding: 28px 12px;
+  border-radius: 18px;
+}
+
+.cta-card .auth-button {
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.cta-card small {
+  max-width: 294px;
+  margin: 13px auto 0;
+  font-size: 10px;
+  line-height: 1.35;
+}
