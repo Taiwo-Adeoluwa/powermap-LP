@@ -1296,3 +1296,8 @@ a {
   font-size: 10px;
   line-height: 1.35;
 }
+
+.feature-reference.forecast-image {
+  padding: 0;
+  background: transparent;
+}
