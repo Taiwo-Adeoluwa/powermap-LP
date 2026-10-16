@@ -1302,7 +1302,14 @@ a {
   background: transparent;
 }
 
-.feature-reference.feed-image {
+.feature-section {
+  margin: 0 8px 12px;
+  padding: 21px 16px 24px;
+  background: #f8f9ff;
+  border-radius: 12px;
+}
+
+.feature-reference.discover-image {
   padding: 0;
-  background: transparent;
+  background: #fff;
 }
