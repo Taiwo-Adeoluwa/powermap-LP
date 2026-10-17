@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown} from "lucide-react";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL ?? "";
 const SUPPORT_URL = process.env.NEXT_PUBLIC_SUPPORT_URL ?? "";
@@ -97,13 +97,6 @@ export default function Home() {
         <div className="page-panel">
           <header className="page-header">
             <BrandLogo />
-            <button
-              className="menu-button"
-              type="button"
-              aria-label="Open navigation"
-            >
-              <Menu size={22} />
-            </button>
           </header>
 
           <section className="hero-section">
@@ -168,7 +161,6 @@ export default function Home() {
             <section className="feature-section" key={feature.title}>
               <h2>{feature.title}</h2>
               <p>{feature.body}</p>
-              <p className="inline-link">{feature.link}</p>
               <figure
                  className={`reference-card feature-reference ${feature.imageClass}`}
            >
