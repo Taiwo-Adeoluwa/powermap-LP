@@ -51,7 +51,7 @@ a {
 
 .landing-page {
   width: 100%;
-  max-width: 393px;
+  max-width: 425px;
   min-height: 100dvh;
   margin: 0 auto;
   overflow: hidden;
@@ -59,7 +59,7 @@ a {
   box-shadow: none;
 }
 .page-frame {
-  padding: 8px 8px 0;
+  padding: 16px;
   background: var(--sky);
 }
 
@@ -1318,25 +1318,3 @@ a {
   margin-top: 20px;
 }
 
-/* Section blue matches the video above and below it, so the video bleeds into the page */
-.how-section {
-  padding-inline: 0;
-  /* Top half matches the video's top edge, bottom half matches its bottom edge.
-     The hard split sits behind the video, so it never shows. */
-  background: linear-gradient(to bottom, #c8deff 50%, #d8e9fd 50%);
-}
-
-/* The section's side padding is gone, so the text gets its own */
-.how-section h2,
-.how-section .trust-copy {
-  padding-inline: 16px;
-}
-
-/* Video runs edge to edge with the same gradient as its own background */
-.how-section .video-reference {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  border-radius: 0;
-  background: linear-gradient(to bottom, #c8deff, #d8e9fd);
-}
